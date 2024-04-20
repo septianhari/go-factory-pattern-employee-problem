@@ -11,13 +11,13 @@ type Intern struct {
 // It returns a pointer to the intern
 // Creational method
 func NewIntern() *Intern {
-	// Create a new intern
-	// Set the name to "Intern"
-	// Set the salary to 100
 	return &Intern{
 		Employee: Employee{
 			Name:   "Intern",
 			Salary: 100,
 		},
 	}
+}
+func (m *Intern) GetBonus() float64 {
+	return 0
 }

@@ -11,9 +11,6 @@ type Staff struct {
 // It returns a pointer to the staff
 // Creational method
 func NewStaff() *Staff {
-	// Create a new staff
-	// Set the name to "Staff"
-	// Set the salary to 500
 	return &Staff{
 		Employee: Employee{
 			Name:   "Staff",
@@ -21,3 +18,9 @@ func NewStaff() *Staff {
 		},
 	}
 }
+
+func (m *Staff) GetBonus() float64 {
+	return float64(m.Salary * 10 / 100)
+}
+
+//septian
